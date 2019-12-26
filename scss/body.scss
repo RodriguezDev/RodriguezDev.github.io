@@ -1,0 +1,161 @@
+
+#body {
+    
+    width: calc(100vw - 120px);
+    background-color: #f8f8f8;
+    margin: 60px;
+
+    h1 {
+        margin: 0;
+    }
+
+    #left-feature-div {
+        background-color: #ff5851;
+        height: calc(2 * 100vh - 120px);
+        width: 50%;
+        transition: all 0.8s ease;
+        
+
+        #scroll-label {
+            font-size: 10px;
+            writing-mode: tb-rl;
+            position: fixed;
+            color: #f8f8f8;
+            bottom: 100px;
+            left: 46vw;
+            margin: 0;
+            transition: all 0.5s ease-in;
+        }
+    }
+
+    #hello-world-label {
+        font-weight: 900;
+        font-size: 120px;
+        position: fixed;
+        top: 40vh;
+        margin-left: calc(50vw - 325px - 60px);
+        transition: all 1s ease;
+        white-space: nowrap;
+    }
+
+    #top-content {
+        position: sticky;
+        top: 40vh;
+        height: calc(60vh - 60px);
+        margin-left: 10vw;
+
+        h3 {
+            font-size: 32px;
+            margin: 0;
+        }
+
+        p {
+            color: white;
+            margin: 4px 0;
+        }
+    }
+
+    .full-size {
+        width: 100% !important;
+    }
+
+    .no-show {
+        margin-left: 100% !important;
+        overflow-x: hidden;
+    }
+
+    .no-display {
+        bottom: -5vh !important;
+    }
+
+    #projects-section {
+        padding: 5% 10%;
+
+        .project {
+            margin: 100px 0;
+        }
+
+        .project-image-container, .project-content-container {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .project-image-container {
+            width: 59%;                
+
+            img {
+                width: 100%;
+                -webkit-transition: opacity 1s ease-in-out;
+                -moz-transition: opacity 1s ease-in-out;
+                -o-transition: opacity 1s ease-in-out;
+                transition: opacity 1s ease-in-out;
+            }
+        }
+
+        .project-content-container {
+            width: 40%;
+
+            h3 {
+                font-size: 36px;
+            }
+
+            .project-description {
+                width: 120%;
+                margin: 20px 0 20px;
+                background-color: #ffffff;
+                padding: 25px;
+                margin: 20px 0 20px -10%;
+                box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.19), 0 1px 2px 0 rgba(0, 0, 0, 0.18);
+                z-index: 100;
+                position: relative;
+
+                p {
+                    margin: 0;
+                }
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                    li {
+                        display: inline-block;
+                        padding: 10px;
+                        margin: 0 12px;
+                    }
+            }
+        }
+    }
+
+    .right-align {
+        text-align: right;
+
+        .project-description {
+            margin: 20px 0 20px -20% !important;
+        }
+    }
+};
+
+
+.visible {
+    //opacity: 1 !important;
+    display: block !important;
+    transition: opacity 0.5s linear !important;
+}
+
+.hidden {
+    //opacity: 0 !important;
+    display: none;
+    transition: opacity 0.5s linear;
+}
+
+.bar {
+    height: 4px;
+    width: 100px;
+    margin: 20px 0;
+    background-color: black;
+    transition: all 1s ease;
+}
+
+.bar-larger {
+    width: 200px;
+}

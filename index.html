@@ -1,1 +1,104 @@
-Hello World
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Chris Rodriguez</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- Stylesheets -->
+    <!-- Use "sass --watch scss:styles" when developing to convert scss to css -->
+    <link rel="stylesheet" type="text/css" href="styles/border.css" />
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles/body.css" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a7fdd7a5f5.js"></script>
+
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="scripts/main.js"></script>
+
+</head>
+<body>
+    <!-- Site border -->
+    <div id="top-border">
+        <h2>C H R I S</h2>
+    </div>
+    <div id="bottom-border"></div>
+    <div id="left-border">
+        <p (click)="toggleMenu()"><i class="fas fa-bars border"></i></p>
+        <p id="menu-label">MENU</p>
+    </div>
+    <div id="right-border">
+        <div id="social-icons">
+            <p><a href="https://www.facebook.com/profile.php?id=100023818999425" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a></p>
+            <p><a href="https://twitter.com/chrisr627" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a></p>
+            <p><a href="https://www.instagram.com/chrisr.627/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></p>
+        </div>
+    </div>
+
+    <!-- Main site content -->
+    <div id="body">
+        <h1 id="hello-world-label" class="animated fadeIn slow">Hello world</h1>
+        <div id="left-feature-div" [ngClass]="{'full-size' : spaceFromTop > 50}">
+            
+            <p id="scroll-label" class="animated fadeInUp slow">SCROLL&nbsp;<i class="fas fa-arrow-down"></i></p>
+        
+            <!--<div *ngIf="spaceFromTop > 50" id="top-content" class="animated fadeIn">-->
+            <div id="top-content" class="hidden animated fadeIn" [ngClass]="{'visible': spaceFromTop > 30}">
+                <h3 class="animated fadeInDown fast">I'm Chris Rodriguez</h3>
+                <div id="top-bio-bar" class="bar"></div>
+                <p>Glad you decided to stop by</p>
+                <p>Take a look around</p>
+            </div>
+        </div>
+        <div id="projects-section">
+            <h2>Projects</h2>
+            <div class="bar" style="margin-bottom: 80px;"></div>
+            <!-- LevelUp -->
+            <div class="project right-align">
+            <div class="project-image-container">
+                <img id="levelUpImg" src="img/levelUpColor.png">
+            </div>
+            <div class="project-content-container">
+                <h3>LevelUp</h3>
+                <div class="project-description">
+                <p>A fully featured professional development tool. Offers a personalized list of objectives to complete, a portal to create and take tests, and fully featured admin tools.</p>
+                </div>
+                <ul>
+                <li>AngularJS</li>
+                <li>C#</li>
+                <li style="margin-right: 0;">Chart.js</li>
+                </ul>
+            </div>
+            </div>
+            <!-- FLICKS -->
+            <div class="project">
+            <div class="project-content-container">
+                <h3>Flicks</h3>
+                <div class="project-description">
+                <p>An e-commerce site created from scratch. The multi-database application manages user profiles, sessions, a product library, and more. Payment is handled through the PayPal API.</p>
+                </div>
+                <ul>
+                <li style="margin-left: 0;">HTML & CSS</li>
+                <li>jQuery</li>
+                <li>Java</li>
+                <li style="margin-right: 0;">PayPal API</li>
+                </ul>
+            </div>
+            <div class="project-image-container">
+                <img id="flicksImg" src="img/flicksColor.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+#body {
+  width: calc(100vw - 120px);
+  background-color: #f8f8f8;
+  margin: 60px;
+}
+#body h1 {
+  margin: 0;
+}
+#body #left-feature-div {
+  background-color: #ff5851;
+  height: calc(2 * 100vh - 120px);
+  width: 50%;
+  transition: all 0.8s ease;
+}
+#body #left-feature-div #scroll-label {
+  font-size: 10px;
+  writing-mode: tb-rl;
+  position: fixed;
+  color: #f8f8f8;
+  bottom: 100px;
+  left: 46vw;
+  margin: 0;
+  transition: all 0.5s ease-in;
+}
+#body #hello-world-label {
+  font-weight: 900;
+  font-size: 120px;
+  position: fixed;
+  top: 40vh;
+  margin-left: calc(50vw - 325px - 60px);
+  transition: all 1s ease;
+  white-space: nowrap;
+}
+#body #top-content {
+  position: sticky;
+  top: 40vh;
+  height: calc(60vh - 60px);
+  margin-left: 10vw;
+}
+#body #top-content h3 {
+  font-size: 32px;
+  margin: 0;
+}
+#body #top-content p {
+  color: white;
+  margin: 4px 0;
+}
+#body .full-size {
+  width: 100% !important;
+}
+#body .no-show {
+  margin-left: 100% !important;
+  overflow-x: hidden;
+}
+#body .no-display {
+  bottom: -5vh !important;
+}
+#body #projects-section {
+  padding: 5% 10%;
+}
+#body #projects-section .project {
+  margin: 100px 0;
+}
+#body #projects-section .project-image-container, #body #projects-section .project-content-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+#body #projects-section .project-image-container {
+  width: 59%;
+}
+#body #projects-section .project-image-container img {
+  width: 100%;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+#body #projects-section .project-content-container {
+  width: 40%;
+}
+#body #projects-section .project-content-container h3 {
+  font-size: 36px;
+}
+#body #projects-section .project-content-container .project-description {
+  width: 120%;
+  margin: 20px 0 20px;
+  background-color: #ffffff;
+  padding: 25px;
+  margin: 20px 0 20px -10%;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.19), 0 1px 2px 0 rgba(0, 0, 0, 0.18);
+  z-index: 100;
+  position: relative;
+}
+#body #projects-section .project-content-container .project-description p {
+  margin: 0;
+}
+#body #projects-section .project-content-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+#body #projects-section .project-content-container ul li {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 12px;
+}
+#body .right-align {
+  text-align: right;
+}
+#body .right-align .project-description {
+  margin: 20px 0 20px -20% !important;
+}
+
+.visible {
+  display: block !important;
+  transition: opacity 0.5s linear !important;
+}
+
+.hidden {
+  display: none;
+  transition: opacity 0.5s linear;
+}
+
+.bar {
+  height: 4px;
+  width: 100px;
+  margin: 20px 0;
+  background-color: black;
+  transition: all 1s ease;
+}
+
+.bar-larger {
+  width: 200px;
+}
+
+/*# sourceMappingURL=body.css.map */
