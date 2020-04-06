@@ -47,20 +47,22 @@
 
     <!-- Main site content -->
     <div id="body">
-        <h1 id="hello-world-label" class="animated fadeIn slow">Hello world</h1>
-        <div id="left-feature-div" [ngClass]="{'full-size' : spaceFromTop > 50}">
+        <h1 id="hello-world-label" class="animated fadeIn slow" style="font-family: 'Courier New', Courier, monospace;">Hello world</h1>
+        <div id="left-feature-div">
             
             <p id="scroll-label" class="animated fadeInUp slow">SCROLL&nbsp;<i class="fas fa-arrow-down"></i></p>
         
             <!--<div *ngIf="spaceFromTop > 50" id="top-content" class="animated fadeIn">-->
-            <div id="top-content" class="hidden animated fadeIn" [ngClass]="{'visible': spaceFromTop > 30}">
+            <div id="top-content" class="hidden animated fadeIn">
                 <h3 class="animated fadeInDown fast">I'm Chris Rodriguez</h3>
                 <div id="top-bio-bar" class="bar"></div>
                 <p>Glad you decided to stop by</p>
                 <p>Take a look around</p>
             </div>
         </div>
-        <div id="projects-section">
+
+        <!-- Projects -->
+        <div id="projects-section" class="content-section">
             <h2>Projects</h2>
             <div class="bar" style="margin-bottom: 80px;"></div>
             <!-- LevelUp -->
@@ -70,8 +72,8 @@
             </div>
             <div class="project-content-container">
                 <h3>LevelUp</h3>
-                <div class="project-description">
-                <p>A fully featured professional development tool. Offers a personalized list of objectives to complete, a portal to create and take tests, and fully featured admin tools.</p>
+                <div class="card project-description">
+                    <p>A fully featured professional development tool. Offers a personalized list of objectives to complete, a portal to create and take tests, and fully featured admin tools.</p>
                 </div>
                 <ul>
                 <li>AngularJS</li>
@@ -85,8 +87,8 @@
             <div class="project">
             <div class="project-content-container">
                 <h3>Flicks</h3>
-                <div class="project-description">
-                <p>An e-commerce site created from scratch. The multi-database application manages user profiles, sessions, a product library, and more. Payment is handled through the PayPal API.</p>
+                <div class="card project-description">
+                    <p>An e-commerce site created from scratch. The multi-database application manages user profiles, sessions, a product library, and more. Payment is handled through the PayPal API.</p>
                 </div>
                 <ul>
                 <li style="margin-left: 0;">HTML, CSS & jQuery</li>
@@ -107,14 +109,57 @@
                 </div>
                 <div class="project-content-container">
                     <h3>No Cap(tion)</h3>
-                    <div class="project-description">
-                    <p>An iOS app that suggests photo captions. Upload a photo, the system extract releavant words, and those words are used to find matching song lyrics from our 18,000+ song database.</p>
+                    <div class="card project-description">
+                        <p>An iOS app that suggests photo captions. Upload a photo, the system extract releavant words, and those words are used to find matching song lyrics from our 18,000+ song database.</p>
                     </div>
                     <ul>
                     <li>Swift</li>
                     <li>Python</li>
                     <li style="margin-right: 0;">Google Vision API</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bio -->
+        <div id="bio-section" class="content-section">
+            <h2>About me</h2>
+            <div class="bar"></div>
+            <div id="photo-and-bio">
+                <img src="img/me.JPG">
+                <p>Hi! I'm Chris, and I'm an alumn of the University of California, Irvine. Currently I'm working at the UCI Student Center as a full-stack developer. I've been fortunate to accept a position as a software engineer at Google, where I'll be starting in the fall.</p>
+            </div>
+            <div id="bio-cards">
+                <div class="card bio-card">
+                    <h3>Education</h3>
+                    <p><strong>University of California, Irvine</strong>: 2017-2020</p>
+                    <p>BS, Computer Science</p>
+                    <p>GPA: 3.85</p>
+                    <p>Highlights: Regents' Scholar, Dean's List for majority of term, Campuswide Honors student</p>
+                </div>
+                <div class="card bio-card">
+                    <h3>My skills</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C# & ASP.NET</li>
+                        <li>C++</li>
+                        <li>MySQL & SQL Server</li>
+                        <li>Web Development</li>
+                        <li>Swift & Xcode</li>
+                        <li>Android Studio</li>
+                    </ul>
+                </div>
+                <div class="card bio-card">
+                    <h3>My interests</h3>
+                    <ul>
+                        <li>Legos</li>
+                        <li>Photography</li>
+                        <li>Collecting shoes</li>
+                        <li>Skateboarding</li>
+                        <li>Video games</li>
+                    </ul>
+                    <p>And, of course, coding :)</p>
                 </div>
             </div>
         </div>
