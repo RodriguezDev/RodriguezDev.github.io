@@ -53,21 +53,35 @@
   right: 0;
   text-align: center;
 }
-#right-border #social-icons p {
-  margin: 10px;
+#right-border #color-toggles-section .color-toggle {
+  cursor: pointer;
+  margin: 20px;
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
 }
-#right-border #social-icons a {
-  transition: all 100ms linear;
-  color: black;
+#right-border #color-toggles-section .color-toggle:hover {
+  border-radius: 4px;
 }
-#right-border #social-icons a.facebook:hover {
-  color: #3b5997;
+#right-border #color-toggles-section .color-yellow {
+  background-color: #ffd996;
 }
-#right-border #social-icons a.twitter:hover {
-  color: #1cb2e8;
+#right-border #color-toggles-section .color-green {
+  background-color: #a6e3ad;
 }
-#right-border #social-icons a.instagram:hover {
-  color: #fd492e;
+#right-border #color-toggles-section .color-blue {
+  background-color: #a3c9ff;
+}
+#right-border #color-toggles-section .color-pink {
+  background-color: #b8adff;
+}
+#right-border #color-toggles-section .color-red {
+  background-color: #f799a7;
+}
+#right-border #color-toggles-section .color-toggle-enabled {
+  border-radius: 4px;
 }
 
 #top-border {

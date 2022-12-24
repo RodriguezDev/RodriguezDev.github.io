@@ -1,4 +1,6 @@
 $border-size: 60px;
+$color-toggle-size: 20px;
+$color-toggle-enabled-radius: 4px;
 
 #top-border,
 #bottom-border,
@@ -59,26 +61,43 @@ $border-size: 60px;
     right: 0;
     text-align: center;
 
-    #social-icons {
-        p {
-            margin: 10px;
+    #color-toggles-section {
+        .color-toggle {
+            cursor: pointer;
+            margin: $color-toggle-size;
+            height: $color-toggle-size;
+            width: $color-toggle-size;
+            border-radius: 15px;
+            box-sizing: border-box;
+            transition: all .3s ease;
+
+            &:hover {
+                border-radius: $color-toggle-enabled-radius;
+            }
         }
 
-        a {
-            transition: all 100ms linear;
-            color: black;
+        .color-yellow {
+            background-color: #ffd996;
+        }
 
-            &.facebook:hover {
-                color: rgb(59, 89, 151);
-            }
+        .color-green {
+            background-color: #a6e3ad;
+        }
 
-            &.twitter:hover {
-                color: rgb(28, 178, 232);
-            }
+        .color-blue {
+            background-color: #a3c9ff;
+        }
 
-            &.instagram:hover {
-                color: rgb(253, 73, 46);
-            }
+        .color-pink {
+            background-color: #b8adff;
+        }
+
+        .color-red {
+            background-color: #f799a7;
+        }
+
+        .color-toggle-enabled {
+            border-radius: $color-toggle-enabled-radius;
         }
     }
 }
