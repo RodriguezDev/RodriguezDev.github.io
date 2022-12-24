@@ -1,51 +1,65 @@
+$border-size: 60px;
 
-#top-border, #bottom-border, #left-border, #right-border {
-    position: fixed;
+#top-border,
+#bottom-border,
+#left-border,
+#right-border {
     background-color: white;
+    position: fixed;
     z-index: 999;
 }
 
-#left-border, #right-border {
-    top: 0; bottom: 0;
-    width: 60px;
+#left-border,
+#right-border {
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    margin: $border-size 0;
+    top: 0;
+    width: $border-size;
 }
-#left-border { 
-    left: 0; 
+
+#top-border,
+#bottom-border {
+    height: $border-size;
+    left: 0;
+    right: 0;
+}
+
+#left-border {
+    left: 0;
     transition: all .2s ease;
-    
+
     p {
-        font-size: 24px;
-        margin-left: 20px;
-        margin-top: calc(50vh - 14px);
         cursor: pointer;
         display: inline-block;
+        font-size: 24px;
+        margin-left: 20px;
     }
 
     #menu-label {
-        margin: 0 20px;
-        font-size: 10px;
-        transform: rotate(-90deg);
-        position: absolute;
-        top: calc(50% - 7.5px);
-        right: 0px;
         display: none;
+        font-size: 10px;
+        margin: 0;
+        right: 0px;
+        transform: rotate(-90deg);
+    }
+
+    &:hover {
+        width: 75px;
+
+        #menu-label {
+            display: inline-block;
+        }
     }
 }
 
-#left-border:hover {
-    width: 90px;
-
-    #menu-label {
-        display: inline-block;
-    }
-}
-#right-border { 
-    right: 0; 
+#right-border {
+    justify-content: center;
+    right: 0;
     text-align: center;
 
     #social-icons {
-        position: relative;
-        top: calc(50% - 60px);
         p {
             margin: 10px;
         }
@@ -53,33 +67,37 @@
         a {
             transition: all 100ms linear;
             color: black;
-        }
 
-        .facebook:hover {
-            color: rgb(59,89,151) !important;
-        }
-        .twitter:hover {
-            color: rgb(28,178,232) !important;
-        }
-        .instagram:hover {
-            color: rgb(253,73,46) !important;
+            &.facebook:hover {
+                color: rgb(59, 89, 151);
+            }
+
+            &.twitter:hover {
+                color: rgb(28, 178, 232);
+            }
+
+            &.instagram:hover {
+                color: rgb(253, 73, 46);
+            }
         }
     }
 }
-    
-#top-border, #bottom-border {
-    left: 0; right: 0;
-    height: 60px;
-}
-#top-border { 
-    top: 0; 
-    margin-left: 60px;
-    z-index: 1000;
 
-    h2 {
-        font-weight: 900;
-        margin-top: 18px;
+#top-border {
+    align-items: center;
+    display: flex;
+    padding-left: $border-size;
+    top: 0;
+
+    #border-title {
         font-size: 18px;
+        font-weight: 900;
+        letter-spacing: 0.5rem;
+        margin: 0px;
+        text-transform: uppercase;
     }
 }
-#bottom-border { bottom: 0; }
+
+#bottom-border {
+    bottom: 0;
+}
