@@ -1,10 +1,23 @@
 #body {
-  width: calc(100vw - 120px);
   background-color: #f8f8f8;
   margin: 60px;
+  width: calc(100vw - 120px);
 }
-#body h1 {
+#body #hello-world-label {
+  color: #f8f8f8;
+  font-family: "Source Code Pro", monospace;
+  font-size: 120px;
+  font-weight: 900;
   margin: 0;
+  margin-left: calc(50vw - 458px);
+  position: fixed;
+  top: 40vh;
+  transition: all 1s ease;
+  white-space: nowrap;
+  width: 800px;
+}
+#body #hello-world-label * {
+  transition: all 1s ease;
 }
 #body #left-feature-div {
   height: calc(2 * 100vh - 120px);
@@ -20,16 +33,6 @@
   left: 46vw;
   margin: 0;
   transition: all 0.5s ease-in;
-}
-#body #hello-world-label {
-  font-weight: 900;
-  font-size: 120px;
-  position: fixed;
-  top: 40vh;
-  width: 800px;
-  margin-left: calc(50vw - 450px);
-  transition: all 1s ease;
-  white-space: nowrap;
 }
 #body #top-content {
   position: sticky;
@@ -61,7 +64,8 @@
 #body #projects-section .project {
   margin: 100px 0;
 }
-#body #projects-section .project-image-container, #body #projects-section .project-content-container {
+#body #projects-section .project-image-container,
+#body #projects-section .project-content-container {
   display: inline-block;
   vertical-align: middle;
 }
@@ -145,7 +149,7 @@
   height: 4px;
   width: 100px;
   margin: 20px 0;
-  background-color: black;
+  background-color: #404040;
   transition: all 1s ease;
 }
 

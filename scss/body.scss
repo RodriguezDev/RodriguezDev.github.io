@@ -1,19 +1,30 @@
-
 #body {
-    
-    width: calc(100vw - 120px);
     background-color: #f8f8f8;
     margin: 60px;
+    width: calc(100vw - 120px);
 
-    h1 {
+    #hello-world-label {
+        color: #f8f8f8;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 120px;
+        font-weight: 900;
         margin: 0;
+        margin-left: calc(50vw - 458px);
+        position: fixed;
+        top: 40vh;
+        transition: all 1s ease;
+        white-space: nowrap;
+        width: 800px;
+
+        * {
+            transition: all 1s ease;
+        }
     }
 
     #left-feature-div {
         height: calc(2 * 100vh - 120px);
         width: 50%;
         transition: all 0.8s ease;
-        
 
         #scroll-label {
             font-size: 10px;
@@ -25,17 +36,6 @@
             margin: 0;
             transition: all 0.5s ease-in;
         }
-    }
-
-    #hello-world-label {
-        font-weight: 900;
-        font-size: 120px;
-        position: fixed;
-        top: 40vh;
-        width: 800px;
-        margin-left: calc(50vw - 450px);
-        transition: all 1s ease;
-        white-space: nowrap;
     }
 
     #top-content {
@@ -78,13 +78,14 @@
             margin: 100px 0;
         }
 
-        .project-image-container, .project-content-container {
+        .project-image-container,
+        .project-content-container {
             display: inline-block;
             vertical-align: middle;
         }
 
         .project-image-container {
-            width: 59%;                
+            width: 59%;
 
             img {
                 width: 100%;
@@ -116,11 +117,12 @@
             ul {
                 list-style-type: none;
                 padding: 0;
-                    li {
-                        display: inline-block;
-                        padding: 10px;
-                        margin: 0 12px;
-                    }
+
+                li {
+                    display: inline-block;
+                    padding: 10px;
+                    margin: 0 12px;
+                }
             }
         }
     }
@@ -165,17 +167,14 @@
             }
         }
     }
-};
-
+}
 
 .visible {
-    //opacity: 1 !important;
     display: block !important;
     transition: opacity 0.5s linear !important;
 }
 
 .hidden {
-    //opacity: 0 !important;
     display: none;
     transition: opacity 0.5s linear;
 }
@@ -184,7 +183,7 @@
     height: 4px;
     width: 100px;
     margin: 20px 0;
-    background-color: black;
+    background-color: #404040;
     transition: all 1s ease;
 }
 
