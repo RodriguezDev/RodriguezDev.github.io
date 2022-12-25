@@ -1,6 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+@use "colors";
+
 body {
-    color: #404040;
+    color: colors.$dark-grey;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }

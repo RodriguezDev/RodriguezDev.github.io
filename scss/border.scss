@@ -1,4 +1,6 @@
-$border-size: 60px;
+@use "colors";
+@use "dimens";
+
 $color-toggle-size: 20px;
 $color-toggle-enabled-radius: 4px;
 
@@ -16,14 +18,14 @@ $color-toggle-enabled-radius: 4px;
     align-items: center;
     bottom: 0;
     display: flex;
-    margin: $border-size 0;
+    margin: dimens.$site-border-size-desktop 0;
     top: 0;
-    width: $border-size;
+    width: dimens.$site-border-size-desktop;
 }
 
 #top-border,
 #bottom-border {
-    height: $border-size;
+    height: dimens.$site-border-size-desktop;
     left: 0;
     right: 0;
 }
@@ -77,23 +79,23 @@ $color-toggle-enabled-radius: 4px;
         }
 
         .color-yellow {
-            background-color: #ffd996;
+            background-color: colors.$yellow-toggle;
         }
 
         .color-green {
-            background-color: #a6e3ad;
+            background-color: colors.$green-toggle;
         }
 
         .color-blue {
-            background-color: #a3c9ff;
+            background-color: colors.$blue-toggle;
         }
 
-        .color-pink {
-            background-color: #b8adff;
+        .color-purple {
+            background-color: colors.$purple-toggle;
         }
 
         .color-red {
-            background-color: #f799a7;
+            background-color: colors.$red-toggle;
         }
 
         .color-toggle-enabled {
@@ -105,7 +107,7 @@ $color-toggle-enabled-radius: 4px;
 #top-border {
     align-items: center;
     display: flex;
-    padding-left: $border-size;
+    padding-left: dimens.$site-border-size-desktop;
     top: 0;
 
     #border-title {

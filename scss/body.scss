@@ -1,10 +1,13 @@
+@use "colors";
+@use "dimens";
+
 #body {
-    background-color: #f8f8f8;
-    margin: 60px;
+    background-color: colors.$light-grey;
+    margin: dimens.$site-border-size-desktop;
     width: calc(100vw - 120px);
 
     #hello-world-label {
-        color: #f8f8f8;
+        color: colors.$light-grey;
         font-family: 'Source Code Pro', monospace;
         font-size: 120px;
         font-weight: 900;
@@ -14,7 +17,6 @@
         top: 40vh;
         transition: all 1s ease;
         white-space: nowrap;
-        width: 800px;
 
         * {
             transition: all 1s ease;
@@ -30,7 +32,7 @@
             font-size: 10px;
             writing-mode: tb-rl;
             position: fixed;
-            color: #f8f8f8;
+            color: colors.$light-grey;
             bottom: 100px;
             left: 46vw;
             margin: 0;
@@ -183,7 +185,7 @@
     height: 4px;
     width: 100px;
     margin: 20px 0;
-    background-color: #404040;
+    background-color: colors.$dark-grey;
     transition: all 1s ease;
 }
 
@@ -192,7 +194,7 @@
 }
 
 .card {
-    background-color: #ffffff;
+    background-color: white;
     padding: 25px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.19), 0 1px 2px 0 rgba(0, 0, 0, 0.18);
 }
