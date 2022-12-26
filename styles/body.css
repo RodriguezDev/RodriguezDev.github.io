@@ -1,22 +1,30 @@
 #body {
   background-color: #f8f8f8;
   margin: 60px;
-  width: calc(100vw - 120px);
+  width: calc(100% - 60px * 2);
+}
+#body #hello-world-container {
+  align-items: center;
+  display: flex;
+  height: calc(100vh - 60px * 2);
+  justify-content: center;
+  position: fixed;
+  text-align: center;
+  transition: all 1s ease;
+  width: calc(100% - 60px * 2);
+}
+#body #hello-world-container * {
+  transition: all 1s ease;
 }
 #body #hello-world-label {
   color: #f8f8f8;
   font-family: "Source Code Pro", monospace;
-  font-size: 120px;
+  font-size: 8rem;
   font-weight: 900;
   margin: 0;
-  margin-left: calc(50vw - 458px);
-  position: fixed;
-  top: 40vh;
-  transition: all 1s ease;
-  white-space: nowrap;
-}
-#body #hello-world-label * {
-  transition: all 1s ease;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
 }
 #body #left-feature-div {
   height: calc(2 * 100vh - 120px);

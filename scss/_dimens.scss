@@ -1,1 +1,2 @@
 $site-border-size-desktop: 60px;
+$full-width-minus-borders: calc(100% - #{$site-border-size-desktop} * 2);

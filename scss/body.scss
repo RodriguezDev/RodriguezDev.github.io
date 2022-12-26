@@ -4,23 +4,33 @@
 #body {
     background-color: colors.$light-grey;
     margin: dimens.$site-border-size-desktop;
-    width: calc(100vw - 120px);
+    width: dimens.$full-width-minus-borders;
 
-    #hello-world-label {
-        color: colors.$light-grey;
-        font-family: 'Source Code Pro', monospace;
-        font-size: 120px;
-        font-weight: 900;
-        margin: 0;
-        margin-left: calc(50vw - 458px);
+    #hello-world-container {
+        align-items: center;
+        display: flex;
+        height: calc(100vh - #{dimens.$site-border-size-desktop} * 2);
+        justify-content: center;
         position: fixed;
-        top: 40vh;
+        text-align: center;
         transition: all 1s ease;
-        white-space: nowrap;
+        width: dimens.$full-width-minus-borders;
 
         * {
             transition: all 1s ease;
         }
+    }
+
+    #hello-world-label {
+        color: colors.$light-grey;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 8rem;
+        font-weight: 900;
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+      
     }
 
     #left-feature-div {
