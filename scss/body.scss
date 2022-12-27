@@ -34,7 +34,7 @@
     }
 
     #left-feature-div {
-        height: calc(2 * 100vh - 120px);
+        height: 150vh;
         width: 50%;
         transition: all 0.8s ease;
 
@@ -51,10 +51,13 @@
     }
 
     #top-content {
+        flex-direction: column;
+        height: dimens.$full-height-minus-borders;
+        justify-content: center;
+        margin-left: #{dimens.$site-border-size-desktop};
         position: sticky;
-        top: 40vh;
-        height: calc(60vh - 60px);
-        margin-left: 10vw;
+        top: dimens.$site-border-size-desktop;
+        transition: opacity 0.5s linear;
 
         h3 {
             font-size: 32px;
@@ -71,17 +74,28 @@
         width: 100% !important;
     }
 
-    .no-show {
+    .hide-hello-world {
         margin-left: 100% !important;
         overflow-x: hidden;
     }
 
-    .no-display {
+    .hide-scroll-label {
         bottom: -5vh !important;
     }
 
     .content-section {
-        padding: 5% 10%;
+        padding: 0 dimens.$site-border-size-desktop;
+    }
+
+    .section-header {
+        top: dimens.$site-border-size-desktop;
+        padding-top: dimens.$site-border-size-desktop;
+        position: sticky;
+        z-index: 200;
+
+        h2 {
+            margin: 0;
+        }
     }
 
     #projects-section {
@@ -182,8 +196,7 @@
 }
 
 .visible {
-    display: block !important;
-    transition: opacity 0.5s linear !important;
+    display: flex !important;
 }
 
 .hidden {
