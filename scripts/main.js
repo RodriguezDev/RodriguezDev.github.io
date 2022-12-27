@@ -1,6 +1,9 @@
-document.addEventListener("DOMContentLoaded", function() {
+$(document).ready(function(){
+    $('.aniview').AniView({
+        animateClass: 'animate__animated'
+    });
     toggleSiteColor('#a3c9ff');
-  });
+});
 
 // The scroll listener.
 var $w = $(window).scroll(function () {
@@ -12,6 +15,13 @@ var $w = $(window).scroll(function () {
     toggleClass("#top-content", "visible", scrollVal, 50);
     toggleClass("#top-bio-bar", "bar-larger", scrollVal, 55);
 });
+
+var options = {
+    animateClass: 'animate__animated',
+    animateThreshold: 100,
+    scrollPollInterval: 20
+}
+$('.aniview').AniView(options);
 
 function toggleClass(attribute, clss, scrollVal, threshold) {
     if (scrollVal > threshold) {
